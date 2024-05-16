@@ -3,7 +3,6 @@ import 'package:kgisl/modules/calculator/presentation/bindings/calculator_bindin
 import 'package:kgisl/modules/calculator/presentation/views/calculator_view.dart';
 
 
-/// On Boarding
 const String calculator = "calculator";
 
 List<GetPage> routes = [
