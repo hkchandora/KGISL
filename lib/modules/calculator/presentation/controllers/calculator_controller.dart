@@ -26,16 +26,12 @@ class CalculatorController extends GetxController{
   }
 
   void getValues() async {
-    print("FETCHING ====>>>>>");
     try {
-      print("FETCHING ====>>>>>1");
       var loadedData = await rootBundle.loadString("assets/input.json");
       calculatorInputModel = CalculatorInputModel.fromJson(jsonDecode(loadedData));
     } catch (e) {
       Get.snackbar("Server Error", "error in getting stock data");
     }
-    print("FETCHED ====>>>>>");
-
     isJsonLoaded(true);
   }
 
